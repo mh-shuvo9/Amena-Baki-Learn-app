@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_marginBottom="20dp"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:src="@drawable/aa"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Edit_User_Id"
+        android:textColor="#FFFFFFFF"
+        android:hint="Username"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Edit_Pass_Id"
+        android:textColor="#FFFFFFFF"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:focusableInTouchMode="true"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:id="@+id/buttonId"
+        android:text="Log in"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of incorrect"
+        android:id="@+id/TextId"
+        android:textColor="#FFFFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="14dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Register ?"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:paddingLeft="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/TextView_Register"
+            />
+    </LinearLayout>
+
+</LinearLayout>
